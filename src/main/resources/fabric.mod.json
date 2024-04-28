@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "Registry Print",
+  "description": "TODO",
+  "authors": [
+    "fzzyhmstrs"
+  ],
+  "license": "MIT",
+  "icon": "assets/${id}/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "me.fzzyhmstrs.registry_print.RegistryPrint"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loaderVersion}",
+    "fabric": "*",
+    "fabric-key-binding-api-v1": "*",
+    "fabric-language-kotlin": ">=${fabricKotlinVersion}",
+    "minecraft": ">=1.20.1",
+    "java": ">=17"
+  }
+}
